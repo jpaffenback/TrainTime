@@ -1,0 +1,123 @@
+<!-- Bootstrap Buttons Demo -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>TrainTime</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Local CSS -->
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <!-- Moment Reference -->
+  <script src="moment.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <br>
+    
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+          <h1 class="text-center">The Trains are Coming, Oh My</h1>
+        </div>
+        <div class="row">
+
+         <!-- Sign-Up Panel-->
+          <div class="col-lg-6">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Add Train</h3>
+              </div>
+              <div class="panel-body">
+    
+                <!-- Sign-up Form (note the various input "types")-->
+                <form role="form">
+                  <div class="form-group">
+                    <label for="name-input">Train Name:</label>
+                    <input class="form-control" id="name-input" type="text" placeholder="Polar Express">
+                  </div>
+                  <div class="form-group">
+                    <label for="destination-input">Destination:</label>
+                    <input class="form-control" id="destination" type="text" placeholder="Los Angeles">
+                  </div>
+                  <div class="form-group">
+                    <label for="time-input">First Train Time:</label>
+                    <input class="form-control" id="time" type="number" placeholder="HH:mm - Military Time">
+                  </div>
+                  <div class="form-group">
+                      <label for="frequency-input">Frequency:</label>
+                      <input class="form-control" id="frequency-input" type="number" placeholder="mins"></textarea>
+                    </div>
+                  
+                  <button class="btn btn-primary btn-lg" id="submit" type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+      <br>
+      <br>
+ <h2> Current Schedule </h2>
+      <table class="table" id="Table">
+        <thead>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+            
+          </tr>
+        </thead>
+     
+        <tbody>
+        </tbody>
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Jimmy John</td>
+            <td>27</td>
+            <td>jimmy@john.edu</td>
+            <td>comment</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr> -->
+        <!-- </tbody> -->
+      </table>
+  <!-- Bootstrap Enhanced Buttons -->
+  <!-- <h1>Submit</h1> -->
+  <!-- Note the specific Bootstrap classes -->
+  <!-- <button class="btn btn-danger btn-lg">Fancy Button</button> -->
+  <!-- Note the specific Bootstrap classes -->
+
+  <!-- Script -->
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
